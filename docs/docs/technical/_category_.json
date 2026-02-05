@@ -1,0 +1,8 @@
+{
+  "label": "技术文档",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "深入了解 Arrow 的技术细节，包括构建、命令行参数和数据结构。"
+  }
+}

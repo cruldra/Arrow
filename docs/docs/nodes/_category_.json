@@ -1,0 +1,8 @@
+{
+  "label": "内置节点",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Arrow 提供的所有内置节点类型的详细文档。"
+  }
+}

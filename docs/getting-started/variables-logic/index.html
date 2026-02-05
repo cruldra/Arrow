@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-getting-started/variables-logic" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">变量与逻辑 | Arrow 文档</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://mhgolkar.github.io/Arrow/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://mhgolkar.github.io/Arrow/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://mhgolkar.github.io/Arrow/docs/getting-started/variables-logic"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="变量与逻辑 | Arrow 文档"><meta data-rh="true" name="description" content="Arrow 拥有多种功能，使其成为设计和开发非线性交互式文档的强大工具，"><meta data-rh="true" property="og:description" content="Arrow 拥有多种功能，使其成为设计和开发非线性交互式文档的强大工具，"><link data-rh="true" rel="icon" href="/Arrow/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://mhgolkar.github.io/Arrow/docs/getting-started/variables-logic"><link data-rh="true" rel="alternate" href="https://mhgolkar.github.io/Arrow/docs/getting-started/variables-logic" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://mhgolkar.github.io/Arrow/docs/getting-started/variables-logic" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"变量与逻辑","item":"https://mhgolkar.github.io/Arrow/docs/getting-started/variables-logic"}]}</script><link rel="stylesheet" href="/Arrow/assets/css/styles.c0aa031c.css">
+<script src="/Arrow/assets/js/runtime~main.754fc0c7.js" defer="defer"></script>
+<script src="/Arrow/assets/js/main.91960625.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="跳到主要内容"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">跳到主要内容</a></div><nav aria-label="主导航" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="切换导航栏" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/Arrow/docs/"><div class="navbar__logo"><img src="/Arrow/img/logo.svg" alt="Arrow Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/Arrow/img/logo.svg" alt="Arrow Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Arrow</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/Arrow/docs/">文档</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/mhgolkar/Arrow" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="切换浅色/暗黑模式（当前为system mode）"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="回到顶部" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="文档侧边栏" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Arrow/docs/"><span title="欢迎使用 Arrow" class="linkLabel_WmDU">欢迎使用 Arrow</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/Arrow/docs/getting-started/quick-start"><span title="入门指南" class="categoryLinkLabel_W154">入门指南</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Arrow/docs/getting-started/quick-start"><span title="快速入门指南" class="linkLabel_WmDU">快速入门指南</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Arrow/docs/getting-started/shortcuts"><span title="键盘和鼠标快捷键" class="linkLabel_WmDU">键盘和鼠标快捷键</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Arrow/docs/getting-started/navigation-plot"><span title="导航与剧情管理" class="linkLabel_WmDU">导航与剧情管理</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/Arrow/docs/getting-started/variables-logic"><span title="变量与逻辑" class="linkLabel_WmDU">变量与逻辑</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Arrow/docs/getting-started/characters"><span title="角色" class="linkLabel_WmDU">角色</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Arrow/docs/getting-started/project-organization"><span title="项目组织" class="linkLabel_WmDU">项目组织</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Arrow/docs/technical/build-from-source"><span title="技术文档" class="categoryLinkLabel_W154">技术文档</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/Arrow/docs/nodes/condition"><span title="内置节点" class="categoryLinkLabel_W154">内置节点</span></a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="页面路径"><ul class="breadcrumbs"><li class="breadcrumbs__item"><span class="breadcrumbs__link">入门指南</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">变量与逻辑</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">本页总览</button></div><div class="theme-doc-markdown markdown"><header><h1>变量与逻辑</h1></header>
+<p>Arrow 拥有多种功能，使其成为设计和开发非线性交互式文档的强大工具，
+特别适用于制作故事丰富的游戏。</p>
+<p><em>变量</em>和节点（如 <a class="" href="/Arrow/docs/nodes/user-input">User-Input</a>、<a class="" href="/Arrow/docs/nodes/variable-update">Variable-Update</a>、<a class="" href="/Arrow/docs/nodes/condition">Condition</a> 等）
+是其中的一些功能，帮助开发者在完全可视化的开发环境中为项目引入逻辑。</p>
+<p>在本文档中，我们回顾帮助扩展工作逻辑方面的最重要功能。</p>
+<blockquote>
+<p>请务必查看<a class="" href="/Arrow/docs/nodes/condition">内置节点</a> 的文档页面。
+另外浏览*<a class="" href="/Arrow/docs/getting-started/characters">角色</a>*文档以了解更多关于其有趣潜力的信息。</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="基础">基础<a href="#基础" class="hash-link" aria-label="基础的直接链接" title="基础的直接链接" translate="no">​</a></h2>
+<p>Arrow 中有三种变量类型：</p>
+<ul>
+<li class="">数字（num）：保存整数</li>
+<li class="">布尔值（bool）：保存二进制状态（即 <code>True</code> 或 <code>False</code>）</li>
+<li class="">字符串（str）：保存文本</li>
+</ul>
+<p>Arrow 中的变量在文档范围内是全局的，因此每个场景和节点都可以读取或写入它们。</p>
+<p>要创建变量，请切换到<em>检查器</em>面板中的相应选项卡。</p>
+<blockquote>
+<p>你可能需要使用选项卡栏右上角的箭头按钮
+来显示其他选项卡，或使用面板标题栏上的选择器按钮。</p>
+</blockquote>
+<p>你可以在那里创建和修改任何变量的初始值，
+但请记住，你需要按 <code>设置</code> 按钮来保留更改。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="变量修改">变量修改<a href="#变量修改" class="hash-link" aria-label="变量修改的直接链接" title="变量修改的直接链接" translate="no">​</a></h2>
+<p>我们可以在运行时使用修改器节点修改任何变量的当前值：</p>
+<ul>
+<li class="">
+<p><a class="" href="/Arrow/docs/nodes/user-input">User-Input</a> 节点显示可自定义的提示消息和输入控件（带有验证），
+然后用从玩家那里收到的输入替换其目标变量的当前值。</p>
+</li>
+<li class="">
+<p><a class="" href="/Arrow/docs/nodes/variable-update">Variable-Update</a> 节点修改其目标变量的当前值。
+任何变量类型都有自己的一组操作，不支持类型转换。
+一些操作接受另一个变量作为公式的右侧；
+在这种情况下，如果你选择相同的变量，将使用变量的初 始值作为右侧。</p>
+</li>
+<li class="">
+<p><a class="" href="/Arrow/docs/nodes/generator">Generator</a> 节点可以在运行时为任何变量创建和设置值。
+根据目标变量的类型，有不同的值生成方法。
+每种方法都有一组可编辑的选项/规则，定义如何创建值。
+例如，可以从一个范围随机生成整数，并可能限制为奇数或偶数。</p>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="变量暴露解析">变量暴露（解析）<a href="#变量暴露解析" class="hash-link" aria-label="变量暴露（解析）的直接链接" title="变量暴露（解析）的直接链接" translate="no">​</a></h2>
+<p>要在具有文本字段的节点类型中暴露变量，包括 <a class="" href="/Arrow/docs/nodes/dialog">Dialog</a>、<a class="" href="/Arrow/docs/nodes/interaction">Interaction</a>、<a class="" href="/Arrow/docs/nodes/content">Content</a> 等，
+请使用大括号中的变量名称，即类似 <code>{variable_name}</code> 的 mustache 占位符。
+当播放此类节点时，Arrow 控制台和任何兼容的运行时
+将用变量的当前值替换它们。</p>
+<p>以以下文本内容为例：</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">你好 {HERO_NAME}！</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">我是 RxD{ROBOT_CODE}，你的机器人向导。</span><br></span></code></pre></div></div>
+<p>如果 <code>HERO_NAME</code>（str）的当前值是 <code>Luke</code>
+并且 <code>ROBOT_CODE</code>（num）是 <code>7</code>，它将被翻译为下一个块：</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-text codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">你好 Luke！</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">我是 RxD7，你的机器人向导。</span><br></span></code></pre></div></div>
+<p>一般来说，变量的命名由你决定。
+我们建议遵循约定，比如始终使用有意义的 snake_case 名称。
+然而，Arrow 编辑器可能会对你的变量名强制一些限制。
+它可能会替换某些字符以使名称可以安全暴露，即避免大括号、点等，
+或者用额外的字符（默认为下划线 <code>_</code>）作为后缀以防止重复。</p>
+<blockquote>
+<p>由于底层的连续性安全机制，如果你重命名一个变量，
+Arrow 会自动为你修改所有暴露它的地方。</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="条件节点">条件节点<a href="#条件节点" class="hash-link" aria-label="条件节点的直接链接" title="条件节点的直接链接" translate="no">​</a></h2>
+<p><a class="" href="/Arrow/docs/nodes/condition">Condition</a> 节点比较其目标变量的当前值</p>
+<ul>
+<li class="">与指定的值，</li>
+<li class="">与另一个变量的当前值</li>
+<li class="">或与变量本身的初始值</li>
+</ul>
+<p>在运行时进行比较。</p>
+<p>条件节点使用类型化运算符比较其目标变量的当前状态。
+例如，可以检查一个数字是否大于、小于或等于另一个数字，
+而字符串可以检查其长度或匹配模式；
+但我们不能将数字与布尔值或字符串进行比较，即使是数字的文本表示。
+换句话说，不支持自动解析或类型转换。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="使用方法">使用方法<a href="#使用方法" class="hash-link" aria-label="使用方法的直接链接" title="使用方法的直接链接" translate="no">​</a></h2>
+<p>为你的 Arrow 冒险添加逻辑可以将它们提升到更高的交互性级别。
+然而，你可能不需要在任何地方都使用变量、其修改器或条件。</p>
+<p>推荐的方法是尽可能使用 Arrow 的<a class="" href="/Arrow/docs/getting-started/navigation-plot">导航</a>功能来控制事件序列。
+这些功能更容易使用和维护，而且性能更好。</p>
+<p>当故事需要控制一些值（如库存、分数等）时，可以利用逻辑。
+例如，你可以为玩家或角色定义 HP（生命点数）变量
+并在每次战斗后更新它们；然后你可以使用 <a class="" href="/Arrow/docs/nodes/condition">Condition</a> 节点来查看他们是否还活着
+（<code>HP &gt; 0</code>）或者你需要 <a class="" href="/Arrow/docs/nodes/jump">Jump</a> 玩家到来世场景并复活他们！</p>
+<blockquote>
+<p>快速提示！
+如果你打算在故事中多次检查一个变量，或需要一个可重复的逻辑块，
+可以创建一个宏并通过 <a class="" href="/Arrow/docs/nodes/macro-use">Macro-Use</a> 节点任意次数地重用它。</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="另请参阅">另请参阅：<a href="#另请参阅" class="hash-link" aria-label="另请参阅：的直接链接" title="另请参阅：的直接链接" translate="no">​</a></h2>
+<ul>
+<li class=""><a class="" href="/Arrow/docs/getting-started/characters">角色</a>：了解使用标签扩展游戏逻辑的有趣方式。</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/mhgolkar/Arrow/tree/main/docs/docs/getting-started/variables-logic.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>编辑此页</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="文件选项卡"><a class="pagination-nav__link pagination-nav__link--prev" href="/Arrow/docs/getting-started/navigation-plot"><div class="pagination-nav__sublabel">上一页</div><div class="pagination-nav__label">导航与剧情管理</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/Arrow/docs/getting-started/characters"><div class="pagination-nav__sublabel">下一页</div><div class="pagination-nav__label">角色</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#基础" class="table-of-contents__link toc-highlight">基础</a></li><li><a href="#变量修改" class="table-of-contents__link toc-highlight">变量修改</a></li><li><a href="#变量暴露解析" class="table-of-contents__link toc-highlight">变量暴露（解析）</a></li><li><a href="#条件节点" class="table-of-contents__link toc-highlight">条件节点</a></li><li><a href="#使用方法" class="table-of-contents__link toc-highlight">使用方法</a></li><li><a href="#另请参阅" class="table-of-contents__link toc-highlight">另请参阅：</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">文档</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/Arrow/docs/getting-started/quick-start">快速入门</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">社区</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/mhgolkar/Arrow/issues" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub Issues<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/mhgolkar/Arrow/discussions" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub Discussions<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">更多</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/mhgolkar/Arrow" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://mhgolkar.github.io/Arrow/" target="_blank" rel="noopener noreferrer" class="footer__link-item">在线体验<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Arrow Project. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>

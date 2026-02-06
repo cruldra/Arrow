@@ -11,7 +11,13 @@ extends Control
 @onready var AppVersionDisplay = $/root/Main/Overlays/Control/About/Margin/Half/Left/Information/Version
 @onready var Copyright = $/root/Main/Overlays/Control/About/Margin/Half/Right/Tabs/Copyright
 
-const LINKS = [
+@onready var HelloLabel = $/root/Main/Overlays/Control/About/Margin/Half/Right/Tabs/Hello
+@onready var WebsiteBtn = $/root/Main/Overlays/Control/About/Margin/Half/Left/Information/Website
+@onready var RepoBtn = $/root/Main/Overlays/Control/About/Margin/Half/Left/Information/Repository
+@onready var DocsBtn = $/root/Main/Overlays/Control/About/Margin/Half/Left/Information/Documentation
+@onready var TabsContainer = $/root/Main/Overlays/Control/About/Margin/Half/Right/Tabs
+
+const LINKS: Array[Variant] = [
 	["/root/Main/Overlays/Control/About/Margin/Half/Left/Information/Website", "https://mhgolkar.github.io/Arrow/"],
 	["/root/Main/Overlays/Control/About/Margin/Half/Left/Information/Repository", "https://github.com/mhgolkar/Arrow"],
 	["/root/Main/Overlays/Control/About/Margin/Half/Left/Information/Documentation", "https://github.com/mhgolkar/Arrow/wiki"],
@@ -25,6 +31,17 @@ func _ready() -> void:
 	AppVersionDisplay.set_text( Settings.ARROW_VERSION );
 	register_connections()
 	print_copyright()
+	refresh_translations()
+	pass
+
+func refresh_translations() -> void:
+	HelloLabel.set_text(tr("WELCOME_MESSAGE"))
+	WebsiteBtn.set_text(tr("Website"))
+	RepoBtn.set_text(tr("Repository"))
+	DocsBtn.set_text(tr("Documentation"))
+	CloseButton.set_text(tr("Close"))
+	TabsContainer.set_tab_title(0, tr("Hello"))
+	TabsContainer.set_tab_title(1, tr("Copyright"))
 	pass
 
 func register_connections() -> void:
@@ -34,6 +51,12 @@ func register_connections() -> void:
 		# var link_button = get_node(link[0])
 		# link_button.pressed.connect(OS.shell_open.bind(link[1]), CONNECT_DEFERRED)
 		get_node(link[0]).set_uri(link[1])
+	self.visibility_changed.connect(self._on_visibility_changed)
+	pass
+
+func _on_visibility_changed() -> void:
+	if self.visible:
+		refresh_translations()
 	pass
 
 func _toggle() -> void:

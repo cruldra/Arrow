@@ -53,6 +53,7 @@ func create_menu_items() -> void:
 	popup.clear()
 	var being_in_browser = Html5Helpers.Utils.is_browser()
 	var item_id = 0; # here, id is the same as order of the item
+	var last_was_separator = true # Prevent leading separator
 	for item in _MENU_ITEMS:
 		if item != null:
 			_ID[item] = item_id
@@ -63,9 +64,13 @@ func create_menu_items() -> void:
 			):
 				popup.add_item(the_item.text, item_id)
 				_IDX[item] = popup.get_item_index(item_id)
+				last_was_separator = false
 		else:
-			popup.add_separator();
+			if not last_was_separator:
+				popup.add_separator();
+				last_was_separator = true
 		item_id += 1
+	# Remove trailing separator if any (though logic above mostly handles it, except if list ends with separator)
 	pass
 
 func update_menu_items_view() -> void:

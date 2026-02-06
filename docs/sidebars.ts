@@ -22,6 +22,8 @@ const sidebars: SidebarsConfig = {
         'technical/build-from-source',
         'technical/cli-arguments',
         'technical/project-data-structure',
+        'technical/internationalization',
+        'technical/i18n-implementation-notes',
       ],
     },
     {

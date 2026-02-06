@@ -40,6 +40,10 @@ window/stretch/aspect="ignore"
 
 project/assembly_name="Arrow"
 
+[gui]
+
+theme/custom_font="res://assets/fonts/NotoSansSC-Regular.ttf"
+
 [input]
 
 arrow_save={

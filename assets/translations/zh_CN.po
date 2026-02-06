@@ -1,0 +1,177 @@
+
+# Arrow Translation
+# =================
+# Simplified Chinese
+# =================
+
+msgid ""
+msgstr ""
+"Project-Id-Version: Arrow\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+# ---
+# Editor Messages
+# ---
+
+msgid "Arrow"
+msgstr "Arrow 叙事工具"
+
+# ---------
+# main.tscn
+# ---------
+
+msgid "[v3.x]"
+msgstr "[v3.x]"
+
+msgid "Website"
+msgstr "官网"
+
+msgid "Repository"
+msgstr "代码仓库"
+
+msgid "Documentation"
+msgstr "文档"
+
+msgid "Hello"
+msgstr "你好"
+
+msgid "WELCOME_MESSAGE"
+msgstr ""
+"[b]欢迎使用 Arrow 3.x[/b]\n"
+"\n"
+"Arrow 是一款免费、开源且功能丰富的工具，用于[i]游戏叙事[/i]设计和创作[i]互动非线性故事[/i]作品。\n"
+"\n"
+"几点提示：\n"
+"\n"
+"[b]• PWA 数据存储[/b]\n"
+"Arrow 网页版使用浏览器存储来管理项目。\n"
+"[i]您的数据仅存储在此设备上。[/i]\n"
+"导出项目请使用：\n"
+"[indent][bgcolor=black][color=white][i][code] 检查器 (面板) > 项目 (标签页) > 导出 [/code][/i][/color][/bgcolor][/indent]\n"
+"清理应用存储请尝试：\n"
+"[indent][bgcolor=black][color=white][i][code] Arrow (菜单按钮; 左上角) > 清除 [/code][/i][/color][/bgcolor][/indent]\n"
+"\n"
+"更多信息，请浏览我们的网站或项目仓库。\n"
+"\n"
+"致敬\n"
+"Mor. H. Golkar 及贡献者\n"
+
+msgid "Copyright"
+msgstr "版权"
+
+msgid "New"
+msgstr "新建"
+
+msgid "Open"
+msgstr "打开"
+
+msgid "Cancel"
+msgstr "取消"
+
+msgid "Close"
+msgstr "关闭"
+
+msgid "Preferences"
+msgstr "首选项"
+
+msgid "Dismiss"
+msgstr "忽略"
+
+msgid "Confirm"
+msgstr "确认"
+
+msgid "User Interface"
+msgstr "用户界面"
+
+msgid "Theme"
+msgstr "主题"
+
+msgid "Language"
+msgstr "语言"
+
+msgid "Data Management"
+msgstr "数据管理"
+
+msgid "Work Directory"
+msgstr "工作目录"
+
+msgid "[Working Directory Path]"
+msgstr "[工作目录路径]"
+
+msgid "Select"
+msgstr "选择"
+
+msgid "Reset"
+msgstr "重置"
+
+msgid "History (Undo/Redo)"
+msgstr "历史 (撤销/重做)"
+
+msgid "Size"
+msgstr "大小"
+
+msgid "HISTORY_SIZE_TOOLTIP"
+msgstr ""
+"历史记录大小定义了您可以在项目中回溯多少步。\n"
+"目前历史功能 (撤销 `Ctrl+Z` & 重做 `Ctrl+Shift+Z`)\n"
+"通过在内存中捕获打开项目的完整快照来工作。\n"
+"性能可能因设备规格和项目大小而异。"
+
+msgid "Authors"
+msgstr "作者"
+
+msgid "Contributors"
+msgstr "贡献者"
+
+msgid "AUID"
+msgstr "AUID"
+
+msgid "AUID_TOOLTIP"
+msgstr ""
+"作者唯一标识符 (AUID) 充当资源 UID 命名空间的第二部分，\n"
+"允许多个贡献者同时处理同一个文档\n"
+"而不会发生 ID 冲突。"
+
+msgid "ACTIVE_CONTRIBUTOR_TOOLTIP"
+msgstr ""
+"如果选中，选定的作者将被视为\n"
+"随后创建的资源的贡献者。"
+
+msgid "Active Contributor"
+msgstr "活跃贡献者"
+
+msgid "Info"
+msgstr "信息"
+
+msgid "Remove"
+msgstr "移除"
+
+msgid "Apply"
+msgstr "应用"
+
+msgid "Chapter"
+msgstr "章节"
+
+msgid "CHAPTER_ID_TOOLTIP"
+msgstr ""
+"章节 ID 是每个文档的唯一标识符\n"
+"(作为资源 UID 命名空间的第一部分)，\n"
+"以避免项目分为多个文件时发生冲突。"
+
+msgid "CHAPTER_ID_UPDATE_TOOLTIP"
+msgstr ""
+"不同的章节 ID 仅适用于未来的 UID。\n"
+"它不会更新或影响已经创建的资源。"
+
+msgid "Update"
+msgstr "更新"
+
+msgid "New Document"
+msgstr "新建文档"
+
+msgid "Title"
+msgstr "标题"
